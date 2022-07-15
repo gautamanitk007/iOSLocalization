@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		D2814BF428817DFD006731BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2814BF228817DFD006731BD /* LaunchScreen.storyboard */; };
 		D2814BFF28817DFD006731BD /* iOSExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2814BFE28817DFD006731BD /* iOSExampleTests.swift */; };
 		D2814C0A28817DFD006731BD /* iOSExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2814C0928817DFD006731BD /* iOSExampleUITests.swift */; };
+		D2814C1C28817F90006731BD /* iOSLocalization in Frameworks */ = {isa = PBXBuildFile; productRef = D2814C1B28817F90006731BD /* iOSLocalization */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2814C1C28817F90006731BD /* iOSLocalization in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +146,9 @@
 			dependencies = (
 			);
 			name = iOSExample;
+			packageProductDependencies = (
+				D2814C1B28817F90006731BD /* iOSLocalization */,
+			);
 			productName = iOSExample;
 			productReference = D2814BE428817DF0006731BD /* iOSExample.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = D2814BDB28817DF0006731BD;
+			packageReferences = (
+				D2814C1A28817F90006731BD /* XCRemoteSwiftPackageReference "iOSLocalization" */,
+			);
 			productRefGroup = D2814BE528817DF0006731BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -587,6 +595,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D2814C1A28817F90006731BD /* XCRemoteSwiftPackageReference "iOSLocalization" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "../";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D2814C1B28817F90006731BD /* iOSLocalization */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2814C1A28817F90006731BD /* XCRemoteSwiftPackageReference "iOSLocalization" */;
+			productName = iOSLocalization;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D2814BDC28817DF0006731BD /* Project object */;
 }

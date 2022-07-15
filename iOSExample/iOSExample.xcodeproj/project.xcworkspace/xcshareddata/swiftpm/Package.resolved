@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "iOSLocalization",
+        "repositoryURL": "/Users/gautamsingh/Desktop/iOSLocalization",
+        "state": {
+          "branch": null,
+          "revision": "1124c6c058cf6c648e3869def7d9289d26709206",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
